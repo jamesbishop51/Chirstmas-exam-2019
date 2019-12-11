@@ -7,14 +7,19 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ListBox HorizontalAlignment="Left" Height="283" Margin="114,86,0,0" VerticalAlignment="Top" Width="199"/>
-        <ListBox HorizontalAlignment="Left" Height="283" Margin="516,86,0,0" VerticalAlignment="Top" Width="200"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="379,173,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="379,237,0,0" VerticalAlignment="Top" Width="75"/>
-        <ComboBox HorizontalAlignment="Left" Margin="193,10,0,0" VerticalAlignment="Top" Width="120"/>
-        <TextBlock HorizontalAlignment="Left" Margin="114,65,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="61"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="516,58,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBlock HorizontalAlignment="Left" Margin="516,374,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="38*"/>
+            <ColumnDefinition Width="353*"/>
+            <ColumnDefinition Width="401*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox HorizontalAlignment="Left" Height="283" Margin="75.895,86,0,0" VerticalAlignment="Top" Width="199" Grid.Column="1"/>
+        <ListBox HorizontalAlignment="Left" Height="283" Margin="125,86,0,0" VerticalAlignment="Top" Width="200" Grid.Column="2"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="340.895,173,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="340.895,237,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <ComboBox HorizontalAlignment="Left" Margin="154.895,10,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="75.895,65,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="61" Grid.Column="1"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="125,58,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Grid.Column="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="125,374,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Grid.Column="2"/>
 
     </Grid>
 </Window>
