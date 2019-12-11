@@ -18,8 +18,9 @@
         <Button x:Name="btnRemove" Content="remove &lt;&lt;" HorizontalAlignment="Left" Margin="340.895,237,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" Grid.Column="1" Click="BtnRemove_Click"/>
         <ComboBox x:Name="cbxFormation" HorizontalAlignment="Left" Margin="154.895,10,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
         <TextBlock HorizontalAlignment="Left" Margin="75.895,65,0,0" TextWrapping="Wrap" Text="All players" VerticalAlignment="Top" Width="61" Grid.Column="1"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="125,58,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Grid.Column="2"/>
-        <TextBlock HorizontalAlignment="Left" Margin="125,374,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Grid.Column="2"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="125,58,0,0" TextWrapping="Wrap" Text="selected players" VerticalAlignment="Top" Width="120" Grid.Column="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="125,374,0,0" TextWrapping="Wrap" Text="spaces" VerticalAlignment="Top" Grid.Column="2"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="49,16,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Width="88"><Run Text="Formation"/><LineBreak/><Run/></TextBlock>
 
     </Grid>
 </Window>

@@ -39,6 +39,10 @@ namespace Softeware_xmas_exam
 
         }
 
+        public override string ToString()
+        {
+            return $"{FirstName} - {Surname}");
+        }
 
     }
 }
