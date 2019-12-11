@@ -15,14 +15,17 @@ using System.Windows.Shapes;
 
 namespace Softeware_xmas_exam
 {
+
+    // i spent to long trying to get the random stuff to work so the rest of the code is kind of crap.
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
-
+        // list for all players.
         List<Player> allPlayers = new List<Player>();
-        List<Player> selectedplayer = new List<Player>() ;
+        //list for players that are going to be moved from one list to the other.
+        List<Player> selectedplayers = new List<Player>() ;
         public MainWindow()
         {
             InitializeComponent();
@@ -77,10 +80,52 @@ namespace Softeware_xmas_exam
 
 
         }
-
+        // runs when the add button is clicked.
         private void BtnAdd_Click(object sender, RoutedEventArgs e)
         {
+            Player selectedplayer = lbxPlayers.SelectedItem as Player;
+
+            // null check
+            if(selectedplayer != null)
+            {
+                // moves an activity from the left listbox to  the right listox when the add 
+                //( >> ) button is clicked and an activity is selected
+                allPlayers.Remove(selectedplayer);
+                selectedplayers.Add(selectedplayer);
+                refreshLists();
+            }
+            else
+            {
+                MessageBox.Show("please select a player");
+            }
+        }
+
+        private void BtnRemove_Click(object sender, RoutedEventArgs e)
+        {
+            Player selectedplayer = lbxselected.SelectedItem as Player;
+
+            //null check
+            if (selectedplayer != null)
+            {
+                allPlayers.Add(selectedplayer);
+                selectedplayers.Remove(selectedplayer);
+                // refresh list
+                refreshLists();
+            }
+        }
+
+        // method to refresh the lists.
+        private void refreshLists()
+        {
+
+            lbxPlayers.ItemsSource = null;
+            lbxPlayers.ItemsSource = allPlayers;
+
+            lbxselected.ItemsSource = null;
+            lbxselected.ItemsSource = selectedplayers;
 
         }
+
+        
     }
 }

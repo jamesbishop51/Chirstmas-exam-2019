@@ -14,8 +14,8 @@
         </Grid.ColumnDefinitions>
         <ListBox x:Name="lbxPlayers" HorizontalAlignment="Left" Height="283" Margin="75.895,86,0,0" VerticalAlignment="Top" Width="199" Grid.Column="1"/>
         <ListBox x:Name="lbxselected" HorizontalAlignment="Left" Height="283" Margin="125,86,0,0" VerticalAlignment="Top" Width="200" Grid.Column="2"/>
-        <Button x:Name="btnAdd" Content="Button" HorizontalAlignment="Left" Margin="340.895,173,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" Grid.Column="1" Click="BtnAdd_Click"/>
-        <Button x:Name="btnRemove" Content="Button" HorizontalAlignment="Left" Margin="340.895,237,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <Button x:Name="btnAdd" Content="add &gt;&gt;" HorizontalAlignment="Left" Margin="340.895,173,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" Grid.Column="1" Click="BtnAdd_Click"/>
+        <Button x:Name="btnRemove" Content="remove &lt;&lt;" HorizontalAlignment="Left" Margin="340.895,237,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" Grid.Column="1" Click="BtnRemove_Click"/>
         <ComboBox x:Name="cbxFormation" HorizontalAlignment="Left" Margin="154.895,10,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
         <TextBlock HorizontalAlignment="Left" Margin="75.895,65,0,0" TextWrapping="Wrap" Text="All players" VerticalAlignment="Top" Width="61" Grid.Column="1"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="125,58,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Grid.Column="2"/>
