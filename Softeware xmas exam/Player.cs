@@ -9,7 +9,7 @@ namespace Softeware_xmas_exam
 
     public enum Position {Goalkeeper, Defender, Midfilder, Forward }
 
-    class Player
+   public class Player
     {
 
         //props
@@ -38,6 +38,7 @@ namespace Softeware_xmas_exam
             DoB = dateofbirth;
 
         }
+
 
     }
 }
