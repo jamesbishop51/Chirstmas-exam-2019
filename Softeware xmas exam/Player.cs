@@ -29,6 +29,15 @@ namespace Softeware_xmas_exam
                 return _age;
             }
         }
+        //ctor
+        public Player(string fname, string lname, Position position, DateTime dateofbirth )
+        {
+            FirstName = fname;
+            Surname = lname;
+            PreferredPossition = position;
+            DoB = dateofbirth;
+
+        }
 
     }
 }

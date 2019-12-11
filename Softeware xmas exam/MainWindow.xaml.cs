@@ -28,6 +28,9 @@ namespace Softeware_xmas_exam
         {
 
 
+            // combo box contents
+            cbxFormation.ItemsSource = new string[] { "4-4-2", "4-3-3", "4-5-1" };
+            
 
 
 
@@ -37,7 +40,7 @@ namespace Softeware_xmas_exam
 
 
         }
-        private void Rng()
+        static void Rng()
         {
             //random name gen
             string[] firstNames = {
@@ -58,31 +61,31 @@ namespace Softeware_xmas_exam
             {
 
                 int number = rng.Next(0, 20);
-                string Fname = firstNames[number];
+                string fname = firstNames[number];
                 number = rng.Next(0, 20);
-                string Lname = lastNames[number];
+                string lname = lastNames[number];
             }
-            // random date gen
-            Random randNum = new Random();
-
-            DateTime minDt = new DateTime(1989, 12, 1, 11, 0, 0);
-            DateTime maxDt = new DateTime(1999, 12, 1, 11, 0, 0);
-            List<DateTime> myDates = new List<DateTime>();
             
-            int minutesDiff = Convert.ToInt32(maxDt.Subtract(minDt).TotalMinutes + 1);
-
-            for (int i = 0; i < 100; i++)
-            {
-                
-                int r = randNum.Next(1, minutesDiff);
-                myDates.Add(minDt.AddMinutes(r));
-            }
-
-            foreach (DateTime d in myDates)
-            {
-                Console.WriteLine(string.Format("{0:dd-MMM-yyyy hh:mm}", d));
-            }
 
         }
+        //method to create the players and add them to a list
+
+        //private static void PlayerList()
+        //{
+        //    Player p1 = new Player()
+        //    {
+        //        FirstName =
+        //    }
+
+
+        //    List<Player> players = new List<Player>();
+        //    players.Add();
+
+
+
+
+        //}
+        
+
     }
 }

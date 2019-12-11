@@ -16,8 +16,8 @@
         <ListBox HorizontalAlignment="Left" Height="283" Margin="125,86,0,0" VerticalAlignment="Top" Width="200" Grid.Column="2"/>
         <Button Content="Button" HorizontalAlignment="Left" Margin="340.895,173,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" Grid.Column="1"/>
         <Button Content="Button" HorizontalAlignment="Left" Margin="340.895,237,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" Grid.Column="1"/>
-        <ComboBox HorizontalAlignment="Left" Margin="154.895,10,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
-        <TextBlock HorizontalAlignment="Left" Margin="75.895,65,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="61" Grid.Column="1"/>
+        <ComboBox x:Name="cbxFormation" HorizontalAlignment="Left" Margin="154.895,10,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="75.895,65,0,0" TextWrapping="Wrap" Text="All players" VerticalAlignment="Top" Width="61" Grid.Column="1"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="125,58,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Grid.Column="2"/>
         <TextBlock HorizontalAlignment="Left" Margin="125,374,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Grid.Column="2"/>
 
